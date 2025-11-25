@@ -5,6 +5,9 @@ $(document).ready(function() {
     // Removes the media query from the header CSS link so it can apply to all screen sizes.
     $("link[href^='css/header.css']").removeAttr("media");
 
+    // Removes the inline styles from links in the header.
+    $(".header-links a").removeAttr("style");
+
     // Changes the alignment of the Shipping page table cells.
     $("#shipping-pricetable th:not(:first-child)").removeClass("left").addClass("center");
     $("#shipping-pricetable td:not(:first-child)").removeClass("left").addClass("center");
