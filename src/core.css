@@ -1,0 +1,4 @@
+/* Hides the original header links to prevent duplicates */
+#header-wrapper {
+    display: none;
+}
